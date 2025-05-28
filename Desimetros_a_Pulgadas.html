@@ -1,0 +1,30 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Desimetros  pulgadas</title>
+    <link rel="stylesheet" href="Conversiones.html">
+    <link rel="stylesheet" href="PA20.-Estilos.css">
+</head>
+<body>
+    <center>
+        <div id="con">
+            <h1>Desimetros a Pulgadas</h1>
+            <br><input type="text" name="n" id="n">
+            <br><br>
+            <input type="button" name="b" id="b" value="CONVERTIR" onclick="co()">
+            <br><br>
+            <input type="text" name="res" id="res">
+            <br><br><br><br>
+            <a href="Conversiones.html">REGRESAR</a>
+        </div>
+    </center>
+    <script>
+        function co()
+        {
+            var n1=document.getElementById('n').value;
+            var re= parseInt(n1)*3.937;
+            document.getElementById('res').value=re+' Pulgadas'
+        }
+    </script>
+</body>
+</html>

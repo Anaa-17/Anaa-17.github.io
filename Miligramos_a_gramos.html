@@ -1,0 +1,31 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Miligramos a Gramos</title>
+    <link rel="stylesheet" href="Conversiones.html">
+    <link rel="stylesheet" href="PA20.-Estilos.css">
+</head>
+<body>
+    <center>
+        <div id="con">
+            <h1>Miligramos a Gramos</h1>
+            <br><br>
+            <input type="text" name="n" id="n">
+            <br><br>
+            <input type="button" name="com" id="com" value="CONVERTIR" onclick="con()">
+            <br><br>
+            <input type="text" name="re" id="re">
+            <br><br><br><br>
+            <a href="Conversiones.html">REGRESAR</a>
+        </div>
+    </center>
+    <script>
+        function con()
+        {
+            var n1=document.getElementById('n').value;
+            var re=parseInt(n1)/1000;
+            document.getElementById('re').value = re + ' Gramos';
+        }
+    </script>
+</body>
+</html>

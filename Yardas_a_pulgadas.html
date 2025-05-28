@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Yardas a Pulgadas</title>
+    <link rel="stylesheet" href="Conversiones.html">
+    <link rel="stylesheet" href="PA20.-Estilos.css">
+</head>
+<body>
+    <center>
+        <div id="con">
+            <h1>Yardas a Pulgadas</h1>
+            <br>
+            <input type="text" name="n" id="n">
+            <br><br>
+            <input type="button" name="com" id="com" value="CONVERTIR" onclick="conv()">
+            <br><br>
+            <input type="text" name="re" id="re">
+            <br><br><br><br>
+            <a href="Conversiones.html">REGRESAR</a>
+        </div>
+    </center>
+    <script>
+        function conv()
+        {
+            var n1=document.getElementById('n').value;
+            var res=parseInt(n1)*36;
+            document.getElementById('re').value = res + ' Pulgadas';
+        }
+    </script>
+</body>
+</html>

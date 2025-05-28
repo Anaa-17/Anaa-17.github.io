@@ -1,0 +1,30 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Libras a Onzas</title>
+    <link rel="stylesheet" href="Conversiones.html">
+    <link rel="stylesheet" href="PA20.-Estilos.css">
+</head>
+<body>
+    <center>
+        <div id="con">
+            <h1>Libras a Onzas</h1>
+            <br><input type="text" name="n" id="n">
+            <br><br>
+            <input type="button" name="b" id="b" value="CONVERTIR" onclick="oc()">
+            <br><br>
+            <input type="text" name="re" id="re">
+            <br><br><br><br>
+            <a href="Conversiones.html">REGRESAR</a>
+        </div>
+    </center>
+    <script>
+        function oc()
+        {
+            var n1=document.getElementById('n').value;
+            var res=parseInt(n1)*16;
+            document.getElementById('re').value=res+' Onzas';
+        }
+    </script>
+</body>
+</html>

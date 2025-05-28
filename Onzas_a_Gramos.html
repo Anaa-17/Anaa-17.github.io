@@ -1,0 +1,30 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Onzas a Gramos</title>
+    <link rel="stylesheet" href="Conversiones.html">
+    <link rel="stylesheet" href="PA20.-Estilos.css">
+</head>
+<body>
+    <center>
+        <div id="con">
+            <h1>Onzas a Gramos</h1>
+            <br><input type="text" name="n" id="n">
+            <br><br>
+            <input type="button" name="b" id="b" value="CONVERTIR" onclick="co()">
+            <br><br>
+            <input type="text" name="re" id="re">
+            <br><br><br><br>
+            <a href="Conversiones.html">REGRESAR</a>
+        </div>
+    </center>
+    <script>
+        function co()
+        {
+            var n1=document.getElementById('n').value;
+            var res=parseInt(n1)*28.35;
+            document.getElementById('re').value=res+' Gramos';
+        }
+    </script>
+</body>
+</html>
